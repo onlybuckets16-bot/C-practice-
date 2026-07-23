@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+
+    struct diary {
+        char date[15];
+        char day[15];
+        char title[50];
+        char mood[20];
+        char entry[500];
+    };
+
+    struct diary d1;
+
+    strcpy(d1.date, "23/7/26");
+    strcpy(d1.day, "Thursday");
+    strcpy(d1.title, "Only Buckets");
+    strcpy(d1.mood, "Good");
+    strcpy(d1.entry, "Today was a good day. I didn't do anything extraordinary, but I enjoyed spending time learning programming. Every small concept I understand gives me more confidence. I know there is still a lot to learn, but I'm excited about improving little by little. I hope tomorrow will be even better.");
+
+    printf("Date  : %s\n", d1.date);
+    printf("Day   : %s\n", d1.day);
+    printf("Title : %s\n", d1.title);
+    printf("Mood  : %s\n", d1.mood);
+    printf("Entry : %s\n", d1.entry);
+
+    return 0;
+}
